@@ -5,7 +5,7 @@
     <classes>
       <class name="com.unosquare.FirstAPITest">
         <methods>
-          <include name="f_Gherkin_2"/>
+          <include name="f_HttpObjects"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.unosquare.FirstAPITest -->
