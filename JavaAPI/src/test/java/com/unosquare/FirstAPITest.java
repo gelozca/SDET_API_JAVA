@@ -1,7 +1,6 @@
 package com.unosquare;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 
 import io.restassured.RestAssured;
@@ -24,13 +23,30 @@ public class FirstAPITest {
 		Reporter.log("Sucess 200 validation");
 
 	}
+
 	@Test
 	public void f_Gherkin_2() {
-		
+
 		given().when().get("https://reqres.in/api/unknown/2").then().assertThat().statusCode(200)
-		.contentType(ContentType.JSON)
-		.and().assertThat().body("data.id", equalTo(2))
-		.and().assertThat().body("data.name", equalTo("fuchsia rose"));
+				.contentType(ContentType.JSON)
+				.and().assertThat().body("data.id", equalTo(2))
+				.and().assertThat().body("data.name", equalTo("fuchsia rose"));
+
+		Reporter.log("Sucess 200 validation");
+	}
+
+	@Test
+	public void f_HttpObjects() {
+		
+		RestAssured.baseURI = "https://reqres.in/api/";
+		RequestSpecification httpRequest = RestAssured.given();
+		Response response = httpRequest.get("/unknown/2");
+
+		int statusCode = response.getStatusCode();
+
+		response.then().statusCode(200).body("data.id", equalTo(2));
+		response.then().statusCode(200).body("data.name", equalTo("fuchsia rose"));
+		Reporter.log("Sucess 200 validation");
 	}
 
 	@BeforeMethod
