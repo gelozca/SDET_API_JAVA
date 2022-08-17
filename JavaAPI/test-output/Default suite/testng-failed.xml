@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unosquare.FirstAPITest">
+      <class name="com.unosquare.test.FirstAPITest">
         <methods>
           <include name="f_HttpObjects"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.unosquare.FirstAPITest -->
+      </class> <!-- com.unosquare.test.FirstAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
