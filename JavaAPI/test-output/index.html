@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.unosquare.FirstAPITest" class="method navigator-link" hash-for-method="f_HttpObjects">f_HttpObjects</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.unosquare.test.FirstAPITest" class="method navigator-link" hash-for-method="f_HttpObjects">f_HttpObjects</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,7 +122,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.unosquare.FirstAPITest</span>
+              <span class="class-name">com.unosquare.test.FirstAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/6t/qq1w22tx65bgtmx1y_nj8cs80000gn/T/testng-eclipse-1341539883/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/6t/qq1w22tx65bgtmx1y_nj8cs80000gn/T/testng-eclipse-1492337407/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +146,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.unosquare.FirstAPITest&quot;&gt;
+      &lt;class name=&quot;com.unosquare.test.FirstAPITest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;f_HttpObjects&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.unosquare.FirstAPITest --&gt;
+      &lt;/class&gt; &lt;!-- com.unosquare.test.FirstAPITest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -193,13 +193,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f_HttpObjects')
-data.setCell(0, 2, 'com.unosquare.FirstAPITest')
-data.setCell(0, 3, 1059);
+data.setCell(0, 2, 'com.unosquare.test.FirstAPITest')
+data.setCell(0, 3, 887);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 887 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,6 +213,20 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">f_HttpObjects</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}</span>
+                <span class="reporter-method-output">200</span>
                 <span class="reporter-method-output">Sucess 200 validation</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -220,15 +234,35 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.unosquare.FirstAPITest</span>
+              <span class="ignored-class-name">com.unosquare.test.FirstAPITest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">f_Gherkin</span>
+                <br/>
                 <span class="ignored-method-name">f_Gherkin_2</span>
                 <br/>
-                <span class="ignored-method-name">f_Gherkin</span>
+                <span class="ignored-method-name">f_GetListResource</span>
+                <br/>
+                <span class="ignored-method-name">f_GetSingleUser</span>
+                <br/>
+                <span class="ignored-method-name">f_GetSingleUserNotFound</span>
+                <br/>
+                <span class="ignored-method-name">f_PostLoginUnsuccessfull</span>
+                <br/>
+                <span class="ignored-method-name">f_PutUpdate</span>
+                <br/>
+                <span class="ignored-method-name">f_PostRegister</span>
+                <br/>
+                <span class="ignored-method-name">f_PostRegisterUnsuccessfull</span>
+                <br/>
+                <span class="ignored-method-name">f_GetSingleResource</span>
+                <br/>
+                <span class="ignored-method-name">f_FirstPost</span>
+                <br/>
+                <span class="ignored-method-name">f_PostLogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -240,14 +274,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.unosquare.FirstAPITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.unosquare.test.FirstAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f_HttpObjects</span>
-                <span class="method-start">2 ms</span>
+                <span class="method-start">4 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
